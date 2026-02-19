@@ -35,10 +35,6 @@ This repo documents the **hardware + software upgrade** of a tracked mower into 
 - Motor drivers (left/right tracks) + lift actuator control
 - Receiver bay / electronics bay (being replaced by integrated control stack)
 
-📸 Photos:
-- `Images/mower_top.jpg`
-- `Images/electronics_bay.jpg`
-
 ---
 
 ## Roadmap
