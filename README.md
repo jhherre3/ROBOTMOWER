@@ -7,14 +7,6 @@
 
 ---
 
-## Status
-- Baseline drive system operational (tracked chassis + motor control)
-- PWM-based control approach validated (PC/MCU → motor drivers)
-- Building the “Phase 1” on-site prototype (human-supervised testing)
-- Planned expansion: autonomy stack + remote ops + safety layers
-
----
-
 ## What this project is
 This repo documents the **hardware + software upgrade** of a tracked mower into a modular robotics platform.
 
@@ -26,9 +18,6 @@ This repo documents the **hardware + software upgrade** of a tracked mower into 
 - **Expandable sensor stack**: IMU, GPS, distance sensors, beacons, telemetry
 
 ---
-
-## System Overview
-**Control philosophy:** “Safe-by-default, operator-in-loop first.”
 
 **Near-term architecture (Phase 1):**
 - **ESP32**: real-time PWM generation, safety watchdog, failsafe behavior
@@ -50,7 +39,7 @@ This repo documents the **hardware + software upgrade** of a tracked mower into 
 ---
 
 ## Roadmap
-### Phase 1 — On-site R&D Prototype (Human-supervised)
+### Phase 1 — Prototype
 **Objective:** reliable, safe local-control system for real testing.
 - [ ] Integrated controller enclosure (clean mounting + cable management)
 - [ ] Web UI: sliders for left/right tracks + lift control
@@ -63,7 +52,7 @@ This repo documents the **hardware + software upgrade** of a tracked mower into 
 ### Phase 2 — Expanded Capability Stack
 - [ ] IMU + orientation view
 - [ ] Add distance sensors front/rear
-- [ ] Optional Pixhawk integration (GPS + mission planning)
+- [ ] Pixhawk integration (GPS + mission planning)
 - [ ] Remote operations architecture (relay, VPN, or cellular gateway)
 
 ### Phase 3 — Autonomy + Remote Ops
@@ -73,9 +62,8 @@ This repo documents the **hardware + software upgrade** of a tracked mower into 
 
 ---
 
-## Safety (non-negotiable)
-This project treats mobility + blades/lift as **safety-critical**.
-Key rules:
+## Safety
+
 - Always boot into a **disabled** state.
 - Loss of UI/control link must trigger **stop** within a short timeout.
 - E-stop must remove drive power **independently of software**.
