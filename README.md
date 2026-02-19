@@ -1,6 +1,6 @@
 # ROBOTMOWER
 
-![Mower stock platform](images/MowerStock.png)
+![Mower stock platform](images/MowerStock1.png)
 
 
 **Tracked mower → Remote-capable robotic platform (safety-first, web-controlled, sensor-ready).**
