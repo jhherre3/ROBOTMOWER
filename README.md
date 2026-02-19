@@ -1,5 +1,7 @@
 # ROBOTMOWER
 
+[![Mower stock platform](images/MowerStock.png)](images/MowerStock.png)
+
 **Tracked mower → Remote-capable robotic platform (safety-first, web-controlled, sensor-ready).**
 
 > Goal: upgrade a basic RC tracked mower into a modern robotic system with
